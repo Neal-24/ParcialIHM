@@ -1,0 +1,143 @@
+/* Banner Interior */
+
+.bannerInterior figure{
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.bannerInterior figure::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .2);  /* Revisar */
+}
+
+
+/* Info-Perfil*/
+
+.infoPerfil{
+    position: relative;
+    margin-top: -20px;
+}
+
+.infoPerfil .colIzqPerfil{
+    position: relative;
+    margin-top: -170px;
+}
+
+.colIzqPerfil .descripcionPerfil{
+    border-right: 1px solid #000;
+}
+
+
+.colDerPerfil{
+    transition: 0.3s all;
+}
+
+.colDerPerfil thead{
+    background-color: #CC555B;
+    line-height: 40px;
+    color:white;
+}
+
+.colDerPerfil thead tr th{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    
+}
+
+.colDerPerfil h4  span i{
+    
+    font-size: 30px;
+    color:#7f7f7f;
+    cursor: pointer;
+  }
+
+  .colDerPerfil h4  span i:hover{  
+   color: #B3627E;
+  }
+
+.colDerPerfil tbody tr td{
+    font-size: 14px;
+}
+
+.table-striped tbody tr:nth-of-type(odd){
+    background-color: #FFD6DC !important;
+}
+
+
+/* ----  */
+
+.table-striped tbody tr i{
+    font-size: 15px;
+    
+}
+
+.table-striped tbody tr .codigo:hover {
+    cursor: pointer;
+    
+
+}
+
+/* Boton Gradiente */
+
+/*  Boton Gradiente */
+
+.colDerPerfil .btn-hovero {
+    padding: 10px;
+    border: none;
+    width: 170px;
+    
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #fff;
+    background-size: 300% 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .colDerPerfil .btn-hovero.rojito {
+    box-shadow: 0 4px 20px 0 rgba(252, 104, 110, 0.75);
+    background-image: linear-gradient(to 
+    
+    right,#FF8697,#CC555B, #CC555B,#FF8697);
+  }
+  
+   .colDerPerfil .btn-hovero:hover {
+    background-position: 100% 0;
+  }
+
+  /* ICONOS */
+
+  .colDerPerfil table tbody tr .btn{
+      background: #CC555B;
+      color: black;
+      display: block;
+      margin: auto;
+    }
+
+    /* Selector */
+
+    .colDerPerfil tbody tr .codigo:hover{
+        color: #CC555B;
+    }
+
+    /* BOTON MENSAJE*/
+
+    .colDerPerfil .dropdown button{
+        box-shadow: none;
+
+    }
+
+    .colDerPerfil .mensaje .dropdown-menu a{
+        background: white;
+        
+    }
+
+    .colDerPerfil .mensaje .dropdown-menu a:hover{
+        color: #CC555B;
+        
+    }

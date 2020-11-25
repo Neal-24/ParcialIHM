@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>UPAO</title>
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="fonts/fontawesome-all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <!-- fav and touch icons -->
+   
+    
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="narvbar.css">
+    <link rel="stylesheet" href="script.js">
+
+
+    <!-- Bootstrap CSS Aquí llama a las hojas de estilo de bootstrap, pero lo hace de un servidor externo-->
+
+</head>
+
+
+
+<body class="hidden">
+
+    <div class="centrado" id="onload">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!--Header-->
+
+    <header class="container-fluid p-0 bg-white"> <br>
+        <div class="container p-0">
+            <a href="index.html">
+                <img src="img/upao_logo.jpg" alt="logotipo" height="60px">
+            </a>
+        </div>
+
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="navigation">
+                        <nav>
+                            <ul class="nav topnav">
+                                <li class="active">
+                                    <a href="index.html"><i class="icon-home"></i> Universidad </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#"><i class="icon-cog"></i> Estudiantes <i class="icon-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Alumnos</a></li>
+                                        <li><a href="#">Biblioteca</a></li>
+                                        <li><a href="#">Campus Virtual</a></li>
+                                        <li><a href="#">Horarios</a></li>
+                                        <li><a href="#">Bienestar Universitario</a></li>
+                                        <li><a href="#">Defensoria Universitaria</a></li>
+                                        <li><a href="#">Trámites</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#"><i class="icon-leaf"></i> Servicios <i class="icon-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Bolsa de trabajo</a></li>
+                                        <li><a href="#">Centro de Idiomas</a></li>
+                                        <li><a href="#">Centro Odontologico</a></li>
+                                        <li><a href="#">Radio Estación UPAO</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#"><i class="icon-briefcase"></i> Posgrado <i
+                                            class="icon-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Posgrado Campus Trujillo</a></li>
+                                        <li><a href="#">Posgrado Campus Piura</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#"><i class="icon-book"></i> Blog <i class="icon-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Blog Youtube</a></li>
+                                        <li><a href="#">Blog Radio UPAO</a></li>
+                                        <li><a href="#">Post Twitter</a></li>
+                                        <li><a href="#">Post Facebook</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-envelope-alt"></i> Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> 
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <video width="480" height="340" controls>
+                        <source src="video/upao.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                    </video>
+                </div>
+
+                <div class="col-4">
+                    <form action="validar.php" method="post">
+                        <br>
+                        <h1> BIENVENIDO </h1>
+                        <div class="form-group">
+                            <label for="text">Ingrese su ID </label> <br>
+                            <input type="text" placeholder="usuario" name="usuario" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pwd"> Ingrese su contraseña</label><br>
+                            <input type="password" name="contraseña" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-check-label mx-3">
+                                <input class="form-check-input" type="checkbox"> Recordar
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" class="btn-dark" value="Ingresar">
+                        </div>
+                        <div class="form-group">
+                            <a href="#"> Olvidé mi contraseña |</a>
+                            <a href="#"> Registrate </a>
+                        </div>
+                </div>
+                </form>
+
+            </div>
+        </div> <hr>
+
+
+        <br> <br> <br>
+
+
+
+        <!-- FOOTER -->
+
+        <footer class="container-fluid">
+            <div class="row text-left pt-4">
+
+                <div class="col-md-4 col-xs-12 tienda text-center">
+                    <h6>MI PERFIL</h6>
+                    <p class="ingre"><a href="perfil.html"><i class="fas fa-user-edit pt-3"></i> Ingresar </a> </p>
+                    <p class="pt-1" style="font-size: 14px;"> Aviso: Debes estar registrado para poder ingresar a tu
+                        perfil.</p>
+                </div>
+
+                <div class="col-md-4 col-xs-12 enlaces">
+                    <h6> POLÍTICAS</h6>
+                    <p class="foo1 pt-2"> <a href="#"> Horarios de atención </a></p>
+                    <p class="foo1"> <a href="terminos.html"> Términos y condiciones</a></p>
+                    <p class="foo1"> <a href="devoluciones.html"> Politicas de entrega y devolución</a></p>
+                </div>
+
+                <div class="col-md-4 col-xs-12 ">
+                    <h6> INFORMACIÓN DE LA TIENDA</h6>
+                    <p class="ingre"><i class="fas fa-map-marker-alt pt-2" style="margin: 5px;"></i> Av. Larco 125 Urb.
+                        La Mercerd</p>
+                    <p class="ingre"><i class="fas fa-phone-alt" style="margin: 5px;"></i> (044)262420 </p>
+                    <p class="ingre"> <i class="fas fa-at" style="margin: 5px;"></i> Sistemas_2020@upao.edu.pe </p>
+
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="container-fluid">
+                <div class="row pt-2">
+                    <div class="col-md-4 col-xs-12">
+
+                        <p class="text-center"><i class="fas fa-book-open" style="margin: 10px;"></i> <a
+                                href="reclamaciones.html">Libro de reclamaciones </a></p>
+                    </div>
+
+                    <div class="col-md-4 col-xs-12"></div>
+
+                    <div class="col-md-4 col-xs-12">
+
+                        <ul>
+
+                            <li>
+                                <a href="https://www.facebook.com/neisserarilson.morenosanchez.9/" target="_blank"> <i
+                                        class="fab fa-facebook-f lead  float-left mx-3"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="#" target="_blank"> <i class="fab fa-twitter lead  float-left mx-3"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC0czkwt1PdL6SkjIvuuiusQ?view_as=subscriber"
+                                    target="_blank"> <i class="fab fa-youtube lead  float-left mx-3"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/neissercode.21/?hl=es-la" target="_blank"> <i
+                                        class="fab fa-instagram lead  float-left mx-3"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/NeisserMS" target="_blank"> <i
+                                        class="fab fa-github lead float-left mx-3"></i> </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12 text-center" style="font-size: 13px;">
+                        <p class="pie"> <b> © PROYECTO FIN DE CURSO - INTERACCIÓN HOMBRE MAQUINA 2020 </b> </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </footer>
+
+
+       
+
+
+
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="js/jquery-3.4.1.min.js"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>feather.replace()</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="js/plugin/jquery.easing.js"> </script>
+        <script src="js/plugin/jquery.scrollUp.js"> </script>
+        <script src="js/script.js"></script>
+
+    </body>
+
+</html>
